@@ -14,7 +14,15 @@ function App() {
   console.log("App rendered");
   console.log(todo);
 
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      {/*  */}
+      {todo && <h1>{todo.title}</h1>}
+      {/* the same */}
+      <h1>{todo?.title}</h1>
+      {/*  */}
+    </div>
+  );
 }
 
 export default App;
